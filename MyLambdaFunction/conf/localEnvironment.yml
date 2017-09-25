@@ -1,0 +1,4 @@
+
+environmentVariables:
+  myvar1: "this is a local environment variable"
+  myvar2: "hello welcome goodbye"
