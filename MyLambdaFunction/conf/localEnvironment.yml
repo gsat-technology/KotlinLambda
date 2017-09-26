@@ -1,4 +1,8 @@
 
 environmentVariables:
-  myvar1: "this is a local environment variable"
-  myvar2: "hello welcome goodbye"
+  dataBucket: "<bucket name>"
+
+aws:
+  namedProfile: "<profile name>"
+  region: "ap-southeast-2"
+
