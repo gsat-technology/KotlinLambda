@@ -83,3 +83,12 @@ A new jar should appear in target/ `MyLambdaFunction-1.0-SNAPSHOT.jar`
 2. Hander for this would be `com.gsat.mylambdafunction.Handler::handler` 
 3. Do a test execution. You should see the output 'it works'
 
+# Running this example
+
+This repo contains an example function which takes  a request containing a list of object keys. The function keeps a cache of file contents in memory and checks for content there before trying to fetch content from S3.
+
+1. Deploy Cloudformation Template `./cloudformation.yml`
+2. Run `./update_lambda.sh MyLambdaFunction.sh`
+3. Run `./upload_test_files.sh <bucket name.>`
+
+Test using json request examples in `./MyLambdaFunction/requestJSON/`
